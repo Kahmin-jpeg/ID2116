@@ -47,11 +47,27 @@
 .sticky + .content {
     padding-top: 60px;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: center;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 </style>
 </head>
 
 <!--content-->
-
 <body>
 
 <div id="navbar">
@@ -67,6 +83,11 @@
     <br>
     <br>
 </div>
+
+<div class="row">
+  <div class="column">
+    <img src="img/photo_2020-01-24_18-36-30.jpg" style="width:100%">
+  </div>
 
 <script>
     window.onscroll = function() {myFunction()};
