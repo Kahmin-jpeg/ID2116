@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style2.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <style>
@@ -54,7 +54,7 @@
    bottom: 0;
    width: 100%;
    background-color: #004656;
-   color: #005163;
+   color: whitesmoke;
    text-align: center;
 }
 
@@ -63,7 +63,7 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: #318EA3; 
+  background: #004656; 
 }
  
 ::-webkit-scrollbar-thumb {
@@ -74,15 +74,69 @@
   background: #FF6161;  
 }
 
+body {
+  font-family: Arial;
+  color: white;
+}
+
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.left {
+  left: 0;
+  background-color: #1088A3;
+}
+
+.right {
+  right: 0;
+  background-color: #0085A3;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.centered img {
+  width: 150px;
+  border-radius: 50%;
+}
+
 </style>
 </head>
 
 <!--content-->
 <body>
 <div id="navbar">
-    <a href="about.html"> About</a>
+    <a class="active" href="javascript:void(0)"> About</a>
     <a href="journal.html"> Journal</a>
-    <a class="active" href="javascript:void(0)"> Home</a>
+    <a href="index.html"> Home</a>
+</div>
+
+<div class="split left">
+    <div class="centered">
+      <img src="img/photo_2020-01-25_01-29-04.jpg">
+      <h2>Chin Kar Fai</h2>
+      <p>IG: @karkarfaifai</p>
+    </div>
+  </div>
+  
+  <div class="split right">
+    <div class="centered">
+      <img src="img/photo_2020-01-25_01-34-53.jpg">
+      <h2>Ong Kah Min</h2>
+      <p>IG: @kahmin.o</p>
+    </div>
 </div>
 
 <div class="footer">
