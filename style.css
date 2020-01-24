@@ -1,7 +1,8 @@
 body {
     background-image: url(img/Yuta_BG\ Image-01.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: top;
+    background-repeat: no-repeat;
 
 }
 
