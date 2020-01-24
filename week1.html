@@ -54,6 +54,32 @@ img {
   margin-right: auto;
 }
 
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #004656;
+   color: #005163;
+   text-align: center;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #318EA3; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #226270; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #FF6161; 
+}
+
 </style>
 </head>
 
@@ -68,8 +94,8 @@ img {
 
 <div class="content">
     <h1>Week 1 & 2</h1>
-    <p>the bits and pieces of microbits</p>
-    <p>-entry dated on 24 January 2020-</p>
+    <p>the bits and pieces of microbits<br>
+        -entry dated on 24 January 2020-</p>
 </div>
 
 <img src="img/photo_2020-01-24_18-36-30.jpg" style="width:50%;">
@@ -77,6 +103,10 @@ img {
 <p>We attempted to use solderless breadboard powered by microbits to do<br>
 simple practices on how exactly we can function these tools. Using wires, resistors<br>
 light bulb and switch; It helped us to explore the potential of this little guy.</p>
+
+<div class="footer">
+    <h6>ID2116 | Powered by Chin Kar Fai & Ong Kah Min</h6>
+</div>
 
 <script>
     window.onscroll = function() {myFunction()};
