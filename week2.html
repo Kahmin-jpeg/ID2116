@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--navigation-->
+<style>
+#navbar {
+    overflow: hidden;
+    background-color:#004656;
+}
+
+#navbar a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#navbar a:hover {
+  background-color:#004656;
+  color: #F9B800;
+}
+
+#navbar a.active {
+  background-color: #004656;
+  color: #FF6161;
+}
+
+
+.content {
+    padding: 16px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .content {
+    padding-top: 60px;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+p {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #004656;
+   color: #FF6161;
+   text-align: center;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #004656; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #226270; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #FF6161; 
+}
+
+</style>
+</head>
+
+<!--content-->
+<body>
+
+<div id="navbar">
+    <a href="about.html"> About</a>
+    <a class="active" href="javascript:void(0)"> Journal</a>
+    <a href="index.html"> Home</a>
+</div>
+
+<div class="content">
+    <h1>Week 2: The Exploration</h1>
+    <p>Entry dated: 30 January 2020</p>
+</div>
+
+<img src="img/photo_2020-01-24_18-36-30.jpg" style="width:50%;">
+<p style="width:50%">The second week went slightly more in-depth into exploring what microbits are capable of doing.</p>
+<img src="img/Wk2_Process 1.jpg" style="width:50%;">
+<img src="img/Wk2_Process 2.jpg" style="width:50%;">
+<img src="img/Wk 2_Process 3.jpg" style="width:50%;">
+<img src="img/Wk2_Process4.jpg" style="width:50%;">
+<img src="img/Wk2_Process5.jpg" style="width:50%;">
+<img src="img/Wk 2_Process 7.gif" style="width:50%;">
+<iframe width=50% src="https://www.youtube.com/watch?v=OuKrORXbkaE">
+</iframe>
+
+
+<div class="footer">
+    <h6>ID2116 | Powered by Chin Kar Fai & Ong Kah Min</h6>
+</div>
+
+<script>
+    window.onscroll = function() {myFunction()};
+    
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+</script>
+
+</body>
+
+</html>
