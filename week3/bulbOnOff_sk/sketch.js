@@ -24,7 +24,7 @@ function draw() {
   val = slider.value();
   imageMode(CENTER);
   
-  if(status)
+  if(status==1)
   {
   image(bulbOn,width/2,height/2,300,300);
   tint(255, val);
