@@ -11,9 +11,13 @@ let image_filelist =
 //album cover
 let vol;
 let imagelist = [];
+let nowplaying;
 
  function preload() {
 
+  soundFormats('mp3');
+  loadSound
+  
 
   for(let filename of image_filelist){
     imagelist.push( loadImage(filename) ); 
