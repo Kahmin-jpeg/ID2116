@@ -3,10 +3,6 @@ var bulbOn;
 var bulbOff;
 var status = 0;
 
-
-x=event.clientX;
-y=event.clientY;
-
 function setup() {
   createCanvas(400, 400)
   bulbOn = loadImage("IMAGES/bulb_on.png");
