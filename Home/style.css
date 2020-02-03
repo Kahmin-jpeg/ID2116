@@ -1,18 +1,11 @@
 body {
-    background-image: url(img/Yuta_BG\ Image-01.jpg);
+    background-image: url(img/Home/Yuta_Background_img_V2-02.jpg);
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
-    background-color: #004656;
+    background-color: #f2f2f2;
 
 }
-
-h1 { 
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: darkcyan;
-    text-align: center;
-}
-
 
 p {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
