@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+#navbar {
+    overflow: hidden;
+    background-color:#f2f2f2;
+}
+
+#navbar a {
+    float: right;
+    display: block;
+    color: #3A3A3A;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#navbar a:hover {
+  background-color:#f2f2f2;
+  color: #F9B800;
+}
+
+#navbar a.active {
+  background-color: #f2f2f2;
+  color: #FF6161;
+}
+
+
+.content {
+    padding: 16px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .content {
+    padding-top: 60px;
+}
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #f2f2f2;
+   color: #FF6161;
+   text-align: center;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f2f2f2; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #3a3a3a; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #F9B800;  
+}
+
+div.gallery {
+  background-color: #f2f2f2;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 16px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  color: #3A3A3A;
+  font-weight: bold;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 4px;
+  margin: 4px;
+  float: left;
+  width: 32%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+</style>
+</head>
+
+<body>
+<div id="navbar">
+    <a class="active" href="javascript:void(0)"> Team</a>
+    <a href="journal.html"> Journal</a>
+    <a href="index.html"> Home</a>
+</div>
+
+<br>
+<br>
+<h1>Team</h1>
+<p>Call us, beep us, if you wan't to reach us<br>(p.s click the photos)</p>
+<br>
+<div class="center">
+<div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="karfai.html">
+        <img src="img/team/Karfai_Photo.jpg" alt="Microbits" width="600" height="400">
+      </a>
+      <div class="desc">Karfai<br><br>Call-sign: The Big Boss</div>
+    </div>
+  </div>
+  
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="Shaokang.html">
+        <img src="img/team/Shaokang_Photo.jpg" alt="Test Broom" width="600" height="400">
+      </a>
+      <div class="desc">Shaokang<br><br>Call-sign: I'm only 19</div>
+    </div>
+  </div>
+  
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="kahmin.html">
+        <img src="img/team/Kahmin_Photo.jpg" alt="Javascript & Broom" width="600" height="400">
+      </a>
+      <div class="desc">Kahmin<br><br>Call-sign: Everything is a Joke</div>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h6>© ID2116 | Powered by Li Shao Kang, Chin Kar Fai & Ong Kah Min</h6>
+</div>
+
+<script>
+    window.onscroll = function() {myFunction()};
+    
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+    </script>
+
+</body>
+
+</html>
