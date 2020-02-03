@@ -1,5 +1,5 @@
 body {
-    background-image: url(img/Home/Yuta_Background_img_V2-02.jpg);
+    background-image: url(img/Yuta_Background_img_V2-02.jpg);
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
@@ -13,6 +13,6 @@ p {
 }
 
 h6 {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 10px;
 }
