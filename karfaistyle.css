@@ -36,8 +36,9 @@ h2 {
     font-size: 16px;
     font-weight: bold;
     color: grey;
+    text-align: center;
 }
 
 img {
-    align-items: center;
+    align-content: center;
 }
