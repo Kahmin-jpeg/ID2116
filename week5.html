@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Week 5</title>
+
+<style>
+#navbar {
+    overflow: hidden;
+    background-color:#f2f2f2;
+}
+
+#navbar a {
+    float: right;
+    display: block;
+    color: #3A3A3A;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: normal;
+}
+
+#navbar a:hover {
+  background-color:#f2f2f2;
+  color: #F9B800;
+}
+
+#navbar a.active {
+  background-color: #f2f2f2;
+  color: #FF6161;
+}
+
+
+.content {
+    padding: 16px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .content {
+    padding-top: 60px;
+}
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #f2f2f2;
+   color: #FF6161;
+   text-align: center;
+   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f2f2f2; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #3a3a3a; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #F9B800;  
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+</style>
+</head>
+
+<body>
+<div id="navbar">
+    <a href="team.html"> Team</a>
+    <a href="journal.html">Journal</a>
+    <a href="index.html"> Home</a>
+</div>
+
+<br>
+<br>
+<h1>Week 5</h1>
+<p>For this week we are situated at home thus we had a consultation session with Yuta online.<br>We realised that the initial transition map that we proposed was not the best in representing the input & output of our object. Which in the end we did some improvement and<br>alteration based on the feedback we received from the consultation.</p>
+<br>
+<div class="center">
+  <img src="img/week 5/20200214_153957.jpg" style="width: 100%;align-content: center;padding: 5px;"> 
+  <img src="img/week 5/Group 8 (1).jpg" style="width: 100%;align-content: center;padding: 5px;"> 
+<p style="color: #3a3a3a;">▼</p> 
+<p>We started out by relooking at our initial microbit set-up, the photos below shows the possible set-up our microbit could take and its reaction based on the input by the users.</p>
+  <div class="row">
+      <div class="column">
+        <img src="img/week 5/20200214_154703.jpg" alt="Photo 1" style="width:100%">
+      </div>
+      <div class="column">
+        <img src="img/week 5/20200214_154613.jpg" alt="Photo 2" style="width:100%">
+      </div>
+      <div class="column">
+        <img src="img/week 5/20200214_154306.jpg" alt="Photo 3" style="width:100%">
+      </div>
+    </div>
+<p style="color: #3a3a3a;">▼</p> 
+<p>We continued to explore on the different ways we could house the cable. But due to being unable to meet IRL, we forgot to document the thinking process of making the case for the broom. So we will leave you with the following gif:</p>
+<img src="img/week 5/giphy.gif" style="width: 100%;align-content: center;padding: 5px;">  
+<p style="color: #3a3a3a;">▼</p> 
+<p>Okay, let's not freak out over that, we do take some progress shots in the end, so kindly enjoy them.</p>
+        <div class="row">
+          <div class="column">
+            <img src="img/week 5/photo_2020-02-16_22-49-24.jpg" alt="Photo 1" style="width:100%">
+          </div>
+          <div class="column">
+            <img src="img/week 5/photo_2020-02-16_22-51-54.jpg" alt="Photo 2" style="width:100%">
+          </div>
+          <div class="column">
+            <img src="img/week 5/photo_2020-02-18_09-35-24.jpg" alt="Photo 3" style="width:100%">
+          </div>
+        </div>
+</div> 
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>    
+<div class="footer">
+  <h6>© ID2116 | Powered by Li Shao Kang, Chin Kar Fai & Ong Kah Min</h6>
+</div>
+
+<script>
+    window.onscroll = function() {myFunction()};
+    
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+    </script>
+
+</body>
+
+</html>
