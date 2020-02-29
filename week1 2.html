@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Week 1</title>
+
+<style>
+#navbar {
+    overflow: hidden;
+    background-color:#f2f2f2;
+}
+
+#navbar a {
+    float: right;
+    display: block;
+    color: #3A3A3A;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: normal;
+}
+
+#navbar a:hover {
+  background-color:#f2f2f2;
+  color: #F9B800;
+}
+
+#navbar a.active {
+  background-color: #f2f2f2;
+  color: #FF6161;
+}
+
+
+.content {
+    padding: 16px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .content {
+    padding-top: 60px;
+}
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #f2f2f2;
+   color: #FF6161;
+   text-align: center;
+   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f2f2f2; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #3a3a3a; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #F9B800;  
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+</style>
+</head>
+
+<body>
+<div id="navbar">
+    <a href="team.html"> Team</a>
+    <a href="journal.html">Journal</a>
+    <a href="index.html"> Home</a>
+</div>
+
+<br>
+<br>
+<h1>Week 1</h1>
+<p>We are being introduced to the wonders of Microbits, in this journal we explore the basics of what Microbits are capable of doing.<br> After exploring the functions of a Microbit, we are left with the task of finding a daily object for our mini assignment. Below records the selected objects and its movement qualities.</p>
+<br>
+<div class="center">
+   <img src="img/week 1/Cup 1.jpg" style="width: 100%;align-content: center;padding: 5px;">
+   <p>The first object we shortlisted was a Cup as a primary object accompanied with a Spoon as a secondary object. We went ahead to explore what we can do with these two objects.</p>
+   <div class="row">
+      <div class="column">
+        <img src="img/week 1/Cup_1.gif" alt="Photo 1" style="width:100%">
+      </div>
+      <div class="column">
+        <img src="img/week 1/Cup_2.gif" alt="Photo 2" style="width:100%">
+      </div>
+      <div class="column">
+        <img src="img/week 1/Cup_3.gif" alt="Photo 3" style="width:100%">
+      </div>
+   <hr>
+      <img src="img/week 1/Ware 1.jpg" style="width: 100%;align-content: center;padding: 5px;">
+   <p>As we chose to explore household objects, we realised how tupperware should not be let out of the picture. Hence, we went ahead to explore the types of actions that can be done with a simple box and lid object.</p>
+   <div class="row">
+      <div class="column">
+        <img src="img/week 1/Ware_1.gif" alt="Photo 1" style="width:100%">
+      </div>
+      <div class="column">
+        <img src="img/week 1/Ware_2.gif" alt="Photo 2" style="width:100%">
+      </div>
+      <div class="column">
+        <img src="img/week 1/Ware_3.gif" alt="Photo 3" style="width:100%">
+      </div>
+   <hr>
+   <img src="img/week 1/Broom 1.jpg" style="width: 100%;align-content: center;padding: 5px;">
+   <p>After exploring the mentioned products, we realised there's something intriguing about working with a Broom. The actions that it allows a user to do is endless - From hitting, sweeping, pushing to ridiculous magician movements such 'flying'; Which inspired us to brainstorm how might we be able to bring fun and joy to the idea of 'cleaning'.</p>
+   <div class="row">
+      <div class="column">
+        <img src="img/week 1/Broom 1_V2.gif" alt="Photo 1" style="width:100%">
+      </div>
+      <div class="column">
+        <img src="img/week 1/Broom 2.gif" alt="Photo 2" style="width:100%">
+      </div>
+      <div class="column">
+        <img src="img/week 1/Broom_3.gif" alt="Photo 3" style="width:100%">
+      </div>
+</div>    
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>    
+
+<div class="footer">
+  <h6>© ID2116 | Powered by Li Shao Kang, Chin Kar Fai & Ong Kah Min</h6>
+</div>
+
+<script>
+    window.onscroll = function() {myFunction()};
+    
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+    </script>
+
+</body>
+
+</html>
