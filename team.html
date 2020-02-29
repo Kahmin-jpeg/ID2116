@@ -79,10 +79,9 @@
 
 .container {
   position: relative;
-  width: 33%;
+  width: 33.3%;
   float: left;
   overflow: hidden;
-  border: 5px solid transparent;
 }
 
 * {
@@ -103,6 +102,7 @@
 }
 
 .overlay {
+  background:url(img/team/karfai1.jpg);
   position: absolute;
   background: rgb(0, 0, 0);
   background: rgba(0, 0, 0, 0.5);
@@ -118,6 +118,7 @@
 }
 
 .container:hover .overlay {
+  background: url(img/team/karfai2.jpg);
   opacity: 1;
 }
 
@@ -138,7 +139,7 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 80%;
+  width: 100%;
 }
 
 .a {
@@ -153,34 +154,25 @@
 
 <body>
 <div id="navbar">
-    <a href="team.html"> Team</a>
-    <a class="active" href="javascript:void(0)"> Journal</a>
+    <a class="active" href="javadcript:void(0)"> Team</a>
+    <a href="journal.html"> Journal</a>
     <a href="index.html"> Home</a>
 </div>
-<!--Using line breaks <br> to create space is not a good idea, try adjusting the CSS margin property.-->
-<br>
-<br>
 
-<h1>Journal</h1>
-<p>٩(˘◡˘)۶ This landing page houses our weekly progress in Computing for Design with Yuta ٩(˘◡˘)۶</p>
-<br>
 <div class="center">
 <div class="container">
-  <img src="img/week 1/Week 1_Cover.jpg" alt="Week1" class="image">
+  <img src="img/team/karfai1.jpg" alt="kf" class="image">
   <div class="overlay">
-    <div class="text"><a href="week1.html">01 | Selection</a></div>
   </div> 
 </div>
 <div class="container">
-  <img src="img/week 2/20200130_204356.jpg" alt="Week2" class="image">
+  <img src="img/team/Kahmin2.jpg" alt="Week2" class="image">
   <div class="overlay">
-    <div class="text"><a href="week2.html">02 | Exploration</a></div>
   </div> 
 </div>
 <div class="container">
-  <img src="img/week 3/Outcome 3.jpg" alt="Week3" class="image">
+  <img src="img/team/Shaokang1.jpg" alt="Week3" class="image">
   <div class="overlay">
-    <div class="text"><a href="week3.html">03 | Experimentation</a></div>
   </div> 
 </div>
 
