@@ -79,7 +79,7 @@
 
 .container {
   position: relative;
-  width: 33.3%;
+  width: 33.33%;
   float: left;
   overflow: hidden;
 }
@@ -92,34 +92,12 @@
   content: "";
   clear: both;
   display: table;
-  padding: 10px;
 }
 
 .image {
   display: block;
   width: 100%;
   height: auto;
-}
-
-.overlay {
-  background:url(img/team/karfai1.jpg);
-  position: absolute;
-  background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.5);
-  top: 0;
-  bottom: 0px;
-  left: 0;
-  right: 0;
-  color: #f1f1f1; 
-  height: 100%;
-  width: auto;
-  opacity: 0;
-  transition: .5s ease;
-}
-
-.container:hover .overlay {
-  background: url(img/team/karfai2.jpg);
-  opacity: 1;
 }
 
 .text {
@@ -142,6 +120,21 @@
   width: 100%;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 .a {
   text-decoration: none;
   color:white;
@@ -160,19 +153,23 @@
 </div>
 
 <div class="center">
-<div class="container">
-  <img src="img/team/karfai1.jpg" alt="kf" class="image">
-  <div class="overlay">
-  </div> 
+  <div class="row">
+    <div class="column">
+      <a href="karfai.html">
+        <img style="width: 100%;" src="img/team/karfai1.jpg" alt="Karfai" onmouseover="this.src='img/team/karfai2.jpg';" onmouseout="this.src='img/team/karfai1.jpg';"/>
+      </a>
+    </div>
+    <div class="column">
+      <a href="kahmin.html">
+        <img style="width: 100%;" src="img/team/kahmin2.jpg" alt="Kahmin" onmouseover="this.src='img/team/kahmin3.jpg';" onmouseout="this.src='img/team/kahmin2.jpg';"/>
+      </a>
+    </div>
+    <div class="column">
+      <a href="Shaokang.html">
+        <img style="width: 100%;" src="img/team/Shaokang1.jpg" alt="Shaokang" onmouseover="this.src='img/team/Shaokang2.jpg';" onmouseout="this.src='img/team/Shaokang1.jpg';"/>
+      </a>
+    </div>
 </div>
-<div class="container">
-  <img src="img/team/Kahmin2.jpg" alt="Week2" class="image">
-  <div class="overlay">
-  </div> 
-</div>
-<div class="container">
-  <img onmouseover="" src="img/team/Shaokang1.jpg" alt="Week3" class="image">
-  </div> 
 </div>
 
 <div class="footer">
